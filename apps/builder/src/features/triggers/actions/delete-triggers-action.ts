@@ -1,0 +1,36 @@
+"use server"
+
+import { and, db, eq, inArray } from "@chatbotx.io/database/client"
+import { triggerModel } from "@chatbotx.io/database/schema"
+import { removeTriggerCache } from "@chatbotx.io/events"
+import {
+  type BulkUpdateIdsRequest,
+  bulkUpdateIdsRequest,
+  type WorkspaceIdRequestParams,
+  workspaceIdrequestParams,
+} from "@/features/common/schemas"
+import { workspaceActionClient } from "@/lib/safe-action"
+
+export const deleteTriggersAction = workspaceActionClient
+  .bindArgsSchemas(workspaceIdrequestParams)
+  .inputSchema(bulkUpdateIdsRequest)
+  .action(
+    async ({
+      bindArgsParsedInputs: [workspaceId],
+      parsedInput,
+    }: {
+      bindArgsParsedInputs: WorkspaceIdRequestParams
+      parsedInput: BulkUpdateIdsRequest
+    }) => {
+      await db
+        .delete(triggerModel)
+        .where(
+          and(
+            eq(triggerModel.workspaceId, workspaceId),
+            inArray(triggerModel.id, parsedInput.ids),
+          ),
+        )
+
+      await removeTriggerCache(workspaceId)
+    },
+  )

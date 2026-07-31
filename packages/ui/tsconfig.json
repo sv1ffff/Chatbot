@@ -1,0 +1,17 @@
+{
+  "extends": "@chatbotx.io/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@chatbotx.io/ui/*": ["./src/*"]
+    },
+    "strictNullChecks": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
+}

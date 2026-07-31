@@ -1,0 +1,28 @@
+{
+  "name": "@chatbotx.io/sequence-scheduler",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./dispatch-cancel": "./src/dispatch-cancel.ts"
+  },
+  "dependencies": {
+    "@chatbotx.io/database": "workspace:*",
+    "@chatbotx.io/redis": "workspace:*",
+    "@chatbotx.io/scheduler": "workspace:*",
+    "@chatbotx.io/utils": "workspace:*",
+    "date-fns": "^4.1.0"
+  },
+  "devDependencies": {
+    "@chatbotx.io/typescript-config": "workspace:*",
+    "@chatbotx.io/vitest-config": "workspace:*",
+    "typescript": "^5",
+    "vitest": "^4.1.0"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest"
+  }
+}

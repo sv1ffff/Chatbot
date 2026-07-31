@@ -1,0 +1,58 @@
+{
+  "name": "@chatbotx.io/business",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./branding": "./src/platform/branding.ts",
+    "./contact-custom-field": "./src/contact-custom-field/index.ts",
+    "./contact-custom-field-value": "./src/contact-custom-field/value-service.ts",
+    "./contact-inbox": "./src/contact-inbox/index.ts",
+    "./contact-locale": "./src/contact-locale/index.ts",
+    "./contact-sequence": "./src/contact-sequence/index.ts",
+    "./coupon": "./src/coupon/index.ts",
+    "./get-user-data": "./src/get-user-data/index.ts",
+    "./smart-delay": "./src/smart-delay/index.ts",
+    "./errors": "./src/errors.ts",
+    "./referral": "./src/referral/index.ts",
+    "./system-field": "./src/system-field/index.ts",
+    "./utils": "./src/utils.ts",
+    "./workspace-lifecycle/predicates": "./src/workspace-lifecycle/predicates.ts"
+  },
+  "dependencies": {
+    "@chatbotx.io/analytics": "workspace:*",
+    "@chatbotx.io/database": "workspace:*",
+    "@chatbotx.io/encryption": "workspace:*",
+    "@chatbotx.io/event-bus": "workspace:*",
+    "@chatbotx.io/events": "workspace:*",
+    "@chatbotx.io/filesystem": "workspace:*",
+    "@chatbotx.io/flow-config": "workspace:*",
+    "@chatbotx.io/imports": "workspace:*",
+    "@chatbotx.io/logger": "workspace:*",
+    "@chatbotx.io/partysocket-config": "workspace:*",
+    "@chatbotx.io/redis": "workspace:*",
+    "@chatbotx.io/sdk": "workspace:*",
+    "@chatbotx.io/sequence-scheduler": "workspace:*",
+    "@chatbotx.io/utils": "workspace:*",
+    "@chatbotx.io/worker-config": "workspace:*",
+    "@t3-oss/env-core": "^0.13.11",
+    "date-fns-tz": "^3.2.0",
+    "dot-prop": "^10.1.0",
+    "drizzle-orm": "1.0.0-beta.22",
+    "jose": "^6.2.3",
+    "libphonenumber-js": "^1.12.42",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@chatbotx.io/typescript-config": "workspace:*",
+    "@chatbotx.io/vitest-config": "workspace:*",
+    "@types/node": "^24.10.4",
+    "typescript": "^5",
+    "vitest": "^4.1.0"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest"
+  }
+}

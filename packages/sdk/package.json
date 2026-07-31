@@ -1,0 +1,25 @@
+{
+  "name": "@chatbotx.io/sdk",
+  "version": "0.1.0",
+  "type": "module",
+  "devDependencies": {
+    "@chatbotx.io/typescript-config": "workspace:*",
+    "@chatbotx.io/vitest-config": "workspace:*",
+    "@types/node": "24.x",
+    "typescript": "^5",
+    "vitest": "^4.1.0"
+  },
+  "dependencies": {
+    "@chatbotx.io/flow-config": "workspace:*",
+    "@chatbotx.io/logger": "workspace:*",
+    "zod": "^4.3.6"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest"
+  }
+}
