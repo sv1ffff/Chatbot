@@ -17,7 +17,7 @@
     "@chatbotx.io/utils": "workspace:*",
     "date-fns": "^4.1.0",
     "date-fns-tz": "^3.2.0",
-    "ioredis": "5.10.1",
+    "ioredis": "6.0.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
