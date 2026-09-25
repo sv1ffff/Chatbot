@@ -44,7 +44,7 @@
   "dependencies": {
     "@base-ui/react": "^1.6.0",
     "@chatbotx.io/logger": "workspace:*",
-    "@diceui/combobox": "^1.2.2",
+    "@diceui/combobox": "^2.0.0",
     "@diceui/listbox": "^0.2.0",
     "@diceui/tags-input": "^0.7.2",
     "@dnd-kit/core": "^6.3.1",
