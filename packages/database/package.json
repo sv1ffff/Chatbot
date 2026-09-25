@@ -11,7 +11,7 @@
     "countries-list": "^3.3.0",
     "date-fns": "^4.4.0",
     "date-fns-tz": "^3.2.0",
-    "drizzle-orm": "1.0.0-beta.22",
+    "drizzle-orm": "1.0.0-rc.5-5935859",
     "pg": "^8.20.0",
     "zod": "^4.3.6"
   },
