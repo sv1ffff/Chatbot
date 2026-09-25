@@ -83,7 +83,7 @@
     "dot-prop": "^10.1.0",
     "html-to-text": "^9.0.5",
     "image-size": "^2.0.2",
-    "ioredis": "5.10.1",
+    "ioredis": "6.0.0",
     "jsonrepair": "^3.14.1",
     "jszip": "^3.10.1",
     "ky": "^2.0.2",

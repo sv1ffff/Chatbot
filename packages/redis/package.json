@@ -10,7 +10,7 @@
     "@chatbotx.io/logger": "workspace:*",
     "@t3-oss/env-core": "^0.13.11",
     "async-mutex": "^0.5.0",
-    "ioredis": "5.10.1",
+    "ioredis": "6.0.0",
     "redlock-universal": "^0.8.4",
     "superjson": "^2.2.6",
     "zod": "^4.3.6"
