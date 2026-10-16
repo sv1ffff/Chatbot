@@ -18,7 +18,7 @@
     "@types/node": "^24.10.4",
     "@types/nodemailer": "^8.0.0",
     "typescript": "^5",
-    "vitest": "^4.1.0"
+    "vitest": "^5.0.4"
   },
   "scripts": {
     "check-types": "tsc --noEmit",
